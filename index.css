@@ -462,7 +462,7 @@ select {
     position: absolute;
     z-index: 2000;
     right: 1rem;
-    top: 2rem;
+    top: 1.75rem;
     width: 32px;
     height: 32px;
     background-color: transparent;

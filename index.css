@@ -415,7 +415,7 @@ select {
     inset: 0 0 0 30%;
     position: fixed;
     z-index: 1000;
-    padding: min(20rem, 15vh) 3rem;
+    padding: min(20rem, 15vh) 0 min(20rem, 15vh) 3rem;
     margin: 0;
     flex-direction: column;
     transform: translateX(100%);
@@ -610,7 +610,8 @@ select {
 /* ------------------------ */
 body {
   background-size: cover;
-  background-position: bottom center;
+  background-position: bottom;
+  height: 100vh;
 }
 /* home */
 

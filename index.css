@@ -865,4 +865,7 @@ body {
   .grid-container--crew > picture * {
     max-width: 75%;
   }
+  .dot-indicator {
+    margin-bottom: 5rem;
+  }
 }

@@ -18,12 +18,13 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- My CSS -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="index.css" />
 
     <title>Space tourism website</title>
     <!-- My JS -->
-    <script src="index.js" defer></script>
+    <script src="navigation.js" defer></script>
   </head>
   <body class="home">
     <a href="#main" class="skip-to-content">Skip to content</a>
@@ -46,7 +47,7 @@
       <nav>
         <ul
           id="primary-navigation"
-          class="primary-navigation flex underline-indicator"
+          class="primary-navigation flex line-indicator"
           data-visible="false"
           aria-current="home"
         >
@@ -85,7 +86,7 @@
         </ul>
       </nav>
     </header>
-    <main id="main" class="grid-container grid-container--home">
+    <main id="main" class="grid-container grid-container--home w3-animate-opacity">
       <div>
         <h1 class="text-light ff-sans-cond fs-500 letter-spacing-1 uppercase">
           So, you want to travel to
@@ -93,7 +94,7 @@
             >Space</span
           >
         </h1>
-        <p>
+        <p class="text-light">
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
           back, and relax because we’ll give you a truly out of this world
@@ -102,7 +103,7 @@
       </div>
       <div>
         <a
-          href="#"
+          href="destination.html"
           class="large-button ff-serif fs-600 uppercase letter-spacing-2 text-dark bg-white no-decoration"
           >Explore</a
         >

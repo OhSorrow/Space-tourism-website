@@ -720,6 +720,9 @@ body {
 .grid-container--destination > picture * {
   max-width: 55%;
 }
+.grid-container--destination article > p {
+  height: 8rem;
+}
 
 .grid-container--destination > .tab-list {
   grid-area: tabs;
@@ -772,7 +775,6 @@ body {
   .grid-container--destination > picture * {
     max-width: 90%;
   }
-
   .tab-list {
     --gap: 2rem;
   }

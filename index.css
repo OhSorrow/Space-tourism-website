@@ -573,6 +573,7 @@ select {
   display: grid;
   place-content: center;
   padding: clamp(1.25rem, 4vw, 1.75rem);
+  height: clamp(1.25rem, 4vw, 1.75rem);
   aspect-ratio: 1;
   color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-dark));
@@ -891,8 +892,8 @@ body {
     "image"
     "numbered-tab"
     "content";
-    align-content:start;
-    --flow-space: 2rem;
+  align-content: start;
+  --flow-space: 2rem;
 }
 
 .grid-container--technology > picture {

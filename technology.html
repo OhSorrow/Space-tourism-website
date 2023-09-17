@@ -96,10 +96,38 @@
         <span class="fs-500 ff-sans-cond" aria-hidden="true">03</span> SPACE
         LAUNCH 101
       </h1>
-      <div role="tablist" class="number-indicator flex ff-serif fs-500">
-        <button role="tab" aria-selected="true">1</button>
-        <button role="tab" aria-selected="false">2</button>
-        <button role="tab" aria-selected="false">3</button>
+      <div
+        role="tablist"
+        aria-label="terminology list"
+        class="number-indicator flex ff-serif fs-500"
+      >
+        <button
+          role="tab"
+          aria-selected="true"
+          aria-controls="vehicle-tab"
+          data-image="vehicle-image"
+          tabindex="0"
+        >
+          1 <span class="sr-only">The launch vehicle</span>
+        </button>
+        <button
+          role="tab"
+          aria-selected="false"
+          aria-controls="spaceport-tab"
+          data-image="spaceport-image"
+          tabindex="0"
+        >
+          2 <span class="sr-only">The spaceport</span>
+        </button>
+        <button
+          role="tab"
+          aria-selected="false"
+          aria-controls="capsule-tab"
+          data-image="capsule-image"
+          tabindex="0"
+        >
+          3 <span class="sr-only">The space capsule</span>
+        </button>
       </div>
 
       <!-- LAUNCH VEHICLE -->

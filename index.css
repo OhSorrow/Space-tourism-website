@@ -29,10 +29,8 @@
     --fs-800: 5rem;
     --fs-700: 2.5rem;
     --fs-600: 1.75rem;
-    --fs-500: 1.5rem;
-    --fs-400: 0.875rem;
-    --fs-300: 1rem;
-    --fs-200: 0.875rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
   }
 }
 
@@ -893,7 +891,7 @@ body {
     "numbered-tab"
     "content";
   align-content: start;
-  --flow-space: 2rem;
+  --flow-space: min(3rem, 6vw);
 }
 
 .grid-container--technology > picture {
@@ -911,4 +909,11 @@ body {
 
 .grid-container--technology > .technology-info {
   grid-area: content;
+}
+
+@media (min-width: 35em) {
+  .grid-container--technology .numbered-title{
+    justify-self: start;
+    padding: 2.5rem 0 1rem 2.5rem; 
+  }
 }

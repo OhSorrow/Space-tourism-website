@@ -570,9 +570,9 @@ select {
   border: 1px solid hsl(var(--clr-white) / 0.25);
   display: grid;
   place-content: center;
-  padding: clamp(1.25rem, 4vw, 1.75rem);
-  height: clamp(1.25rem, 4vw, 1.75rem);
   aspect-ratio: 1;
+  padding: clamp(1.25rem, 4vw, 1.75rem);
+  /* height: clamp(1.25rem, 4vw, 1.75rem); */
   color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-dark));
   cursor: pointer;
@@ -907,13 +907,40 @@ body {
   grid-area: numbered-tab;
 }
 
-.grid-container--technology > .technology-info {
+.grid-container--technology > .terminology-info {
   grid-area: content;
 }
 
 @media (min-width: 35em) {
-  .grid-container--technology .numbered-title{
+  .grid-container--technology .numbered-title {
     justify-self: start;
-    padding: 2.5rem 0 1rem 2.5rem; 
+    padding: 2.5rem 0 1rem 2.5rem;
+  }
+}
+
+@media (min-width: 47em) {
+  .grid-container--technology {
+    grid-template-areas:
+      ". title title title ."
+      ". numbered-tab content image .";
+    grid-template-columns:
+      minmax(2rem, 4rem) min-content minmax(0rem, 35rem) minmax(0, 15rem)
+      minmax(1rem, 1fr);
+    align-items: center;
+    --container-gap: 3rem;
+    --flow-space: 0.5rem;
+  }
+  .grid-container--technology .numbered-title {
+    padding: 0;
+  }
+  .grid-container--technology .number-indicator {
+    flex-flow: column nowrap;
+    place-items: center;
+  }
+  .grid-container--technology .number-indicator > * {
+    padding: 0 clamp(1.25rem, 4vw, 1.75rem);
+  }
+  .grid-container--technology > picture {
+    grid-column: span 2;
   }
 }
